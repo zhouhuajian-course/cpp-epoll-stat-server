@@ -28,19 +28,8 @@ void signalHandler(int sigalNumber)
 
 int main(int argc, char ** argv)
 {
-    // char test[10] = "test";
-    // string test2(test, 2);
-    // cout << test2 << endl;
-    // return 0;
-
-    // string ip = "192.168.1.206";
-    // void *ptr = &ip;
-    // string *ip2 = (string *)ptr;
-    // cout << *ip2 << endl;
-    // return 0;
-
     signal(SIGINT, signalHandler);   // ctrl + c
-    signal(SIGKILL, signalHandler);  // kill -9 $pid 
+    signal(SIGKILL, signalHandler);  // kill -9 $pid 貌似未生效
 
     // 0. 初始化数据库 内存 磁盘 目录当前工作目录 忽略错误
     // 输入文件流对象读取文件 文件不存在不会报错
