@@ -1,5 +1,13 @@
 # 简单的使用epoll的HTTP统计服务器
 
-调试
+统计
 
-curl -X POST -d "project_path=/project/test1" 192.168.1.206:3333
+curl -X POST -d "/project/test8" 192.168.1.206:33333
+
+访问统计结果
+
+curl -X GET 192.168.1.206:33333
+
+或者浏览器访问
+
+192.168.1.206:33333
